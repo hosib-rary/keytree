@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> [ Keytree ] Welcome to My portfolio Homepage </title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/portfolio.js"></script>
+<link rel="shortcut icon" href="images/fafa.ico" title="파비콘">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+<link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+	<nav>
+		<div> 
+			<p><img src="images/logo1.png" alt="Logo" id="Sitelogo"></p>
+			<div id="menu">
+				<a href="#top">Home</a>
+				<a href="#about">About</a>
+				<a href="#portfolio">Portfolio</a>
+				<a href="#event">Event</a>
+				<a href="#contact">Contact</a>
+			</div>
+		</div>
+	</nav>
+	<header id="top">
+		<div id="typing"></div>
+		<div id="click">
+			<img src="images/scroll_more.png" class="scImage">
+			<!-- <i class="fas fa-chevron-down"></i> -->
+			<a href="#about">Click</a>
+		</div>
+	</header>
+	<section id="about" class="area">
+		<h2 class="subTitle">About</h2>
+		<img src="images/me.png" alt="김은영">
+		<p>
+			&#34; 끊임없이 탐구하며, 성장해 나가는 디자이너, 김은영입니다. &#34;		
+		</p>
+		<div>
+			<section>
+				<h3>Profile</h3>
+				<p>
+					이름 : 김은영 (Kim Eun Young)<br>
+					나이 : 39세 (1987.01.15)<br>
+					주소 :  경기도 안산시 상록구 도매시장로<br>
+					연락처 : 010-2261-3715<br>
+					E-mail :ricatan@naver.com
+				</p>
+			</section>
+			<section>
+				<h3>Experiences & Education</h3>
+				<p>
+					2025.03 - 2025.07 : 라인인컴퓨터아트학원 [UI/UX웹앱디자인&프론트엔드개발과정] 수료<br>
+					2024.06 - 2024.08 : 더좋은운동으로 파트타임 근무 <br>
+					2023.12 - 2024.05 : 메디코퍼 디자인 업무 담당 <br>
+					2022.06 - 2022.02 : 하이미디어 안산 [2D&3D 영상편집과정] 수료<br>
+					2019.01 - 2019.06 : 유니크 디자인팀 보조로 6개월 근무
+					2014.11-  2016.02 : 효성ITX 소속 [롯데아이몰 고객센터] 인바운드 상담원 근무
+ 					2010.03 - 2012.02 : 부산여자대학교 음악학과 음악치료학 전공 졸업
+				</p>
+			</section>
+			<section id="skill">
+				<h3>Skill</h3>
+				<form>
+					<p id="Photoshop">						
+						<label>Photoshop</label>
+						<progress value="0" max="100">90%</progress>
+					</p>
+					<p id="Illustrator">
+						<label>Illustrator</label>
+						<progress value="0" max="100">80%</progress>
+					</p>
+					<p id="Html">
+						<label>HTML5</label>
+						<progress value="0" max="100">70%</progress>
+					</p>
+					<p id="CSS">
+						<label>CSS</label>
+						<progress value="0" max="100">80%</progress>
+					</p>
+					<p id="JQuery">
+						<label>JQuery</label>
+						<progress value="0" max="100">75%</progress>
+					</p>
+					<p id="Blender">
+						<label>Blender</label>
+						<progress value="0" max="100">75%</progress>
+					</p>
+				</form>
+			</section>
+		</div>
+	</section>
+	<div id="portfolio" class="area">
+		<h2 class="subTitle">Portfolio</h2>
+		<section id="port1">
+			<div class="left">
+				<h3>메디코퍼(업데이트중)</h3>
+				<ul>
+					<li>
+						<b>사이트명</b>
+						<span>메디코퍼 (반응형) </span>
+					</li>						
+					<li>
+						<b>제작기간</b>
+						<span>2025.04.01 - 2025.07.17</span>
+					</li>
+					<li>
+						<b>제작물</b>
+						<span>인트로페이지 / 일부 페이지 內 상세페이지 제작</span>
+					</li>
+					<li>
+						<b>컨셉</b>
+						<span>깔끔한, 신뢰성있는</span>
+					</li>
+					<li>
+						<b>컨셉설명</b>
+						<span>기존 웹사이트는 한눈에 봐서는 홈페이지의 목적성을 빠로 알기 어려우며, 협업하고 있는 업체에서 제공해주는 웹 서비스내에서 
+							제한되어있는 부분이 많다보니, 답답하게 구현되었던 부분이 많았다.  때문에 좀 더 깔끔한 UI/UX로 개선한 디자인을 목표로 진행해보았습니다.  </span>					
+					</li>					
+				</ul>
+				<a href="plan/hankook/index.html" target="_blank">리뉴얼 기획서</a>
+				<a href="site/everybot/index.html" target="_blank">웹사이트 바로가기</a>
+				<a href="site/perfume/index.html" onclick="window.open(this.href, 'win1', 'top=10, left=100 , width=414, height=740, toolbar=no, scrollbars=no, resizable=yes'); return false;"   onkeypress="this.onclick()">모바일웹 바로가기</a>
+			</div>
+			<div class="right">
+				<img src="images/portfolio-1.jpg" alt="포트폴리오 리움">
+			</div>			
+		</section>
+		<section id="port2">
+			<div class="left">
+				<img src="images/portfolio-2.jpg" alt="포트폴리오 보은관광">
+			</div>
+			<div class="right">
+				<h3>화랑오토캠프장(업데이트중)</h3>
+				<ul>
+					<li>
+						<b>사이트명</b>
+						<span>안산도시공사 화랑오토캠프장 </span>
+					</li>
+					<li>
+						<b>제작기간</b>
+						<span>2025.05.19 - 2025.07.26</span>
+					</li>
+					<li><b>
+						제작물</b>
+						<span>메인페이지와 서브페이지 등 </span>
+					</li>
+					<li>
+						<b>컨셉</b>
+						<span>고전적인, 향수에 젖는</span>
+					</li>
+					<li>
+						<b>컨셉설명</b>
+						<span>기존 사이트는 메뉴가 간결하지 않고 중구난방한데다가 웹 표준및 장애인들이 사용하는 부분을
+							배려해주는 부분이 전혀 없었으며, 또한 마크업 검증을 거쳤을 때 통과되지 못한 사항들이 있어서
+							해당하는 부분을 반영하면서 사이트를 제작해보자 하는 마음에 작업하게 되었습니다. .</span>
+					</li>
+				</ul>
+				<a href="plan/hankook/index.html" target="_blank">리뉴얼 기획서</a>
+				<a href="site/everybot/index.html" target="_blank">웹사이트 바로가기</a>		
+				<a href="site/fashion/index.html" onclick="window.open(this.href, 'win1', 'top=10, left=100 , width=375, height=740, toolbar=yes, scrollbars=no, resizable=yes'); return false;"   onkeypress="this.onclick()">모바일웹 프로토타입</a>
+			</div>
+		</section>
+		<section id="port3">
+			<div class="left">
+				<h3>Noodle Foodle</h3>
+				<ul>
+					<li>
+						<b>사이트명</b>
+						<span>누들푸들 (반응형)</span>
+					</li>
+					<li>
+						<b>제작기간</b>
+						<span>2025.07.29 - 2025.08.16</span>
+					</li>
+					<li>
+						<b>제작물</b>
+						<span>메인페이지와 서브페이지(레시피, 푸드매거진, 프랜즈, 리뷰)</span>
+					</li>
+					<li>
+						<b>컨셉</b>
+						<span>모던한, 선선한</span>
+					</li>
+					<li>
+						<b>컨셉설명</b>
+						<span>기존 웹사이트는 플래쉬를 이용한 사이트로 좁은 여백에 정보의 중요도가 구분되지 않았습니다. 때문에, 정보의 중요도를 나누고 여백을 주어 정보에 집중 할 수 있도록 메인페이지를 구성하였습니다.</span>
+					</li>
+				</ul>
+				<a href="plan/hankook/index.html" target="_blank">리뉴얼 기획서</a>
+				<a href="site/everybot/index.html" target="_blank">웹사이트 바로가기</a>
+				<a href="site/fashion/index.html" onclick="window.open(this.href, 'win1', 'top=10, left=100 , width=414, height=740, toolbar=yes, scrollbars=no, resizable=yes'); return false;"   onkeypress="this.onclick()">모바일웹 바로가기</a>
+			</div>
+			<div class="right">
+				<img src="images/portfolio-3.jpg" alt="포트폴리오 태영건설">
+			</div>
+		</section>
+		<section id="port4">
+			<div class="left">
+				<img src="images/portfolio-4.jpg" alt="포트폴리오 @@@@">
+			</div>
+			<div class="right">
+				<h3>%%%%%%%%%</h3>
+				<ul>
+					<li>
+						<b>사이트명</b>
+						<span>###########</span>
+					</li>
+					<li>
+						<b>제작기간</b>
+						<span>2025.07.09 - 2025.07.26</span>
+					</li>
+					<li><b>
+						제작물</b>
+						<span>메인페이지와 서브페이지 ($$$$$$,%%%%%%%,#####)</span>
+					</li>
+					<li>
+						<b>컨셉</b>
+						<span>&&&&&&&&&,@@@@@@@</span>
+					</li>
+					<li>
+						<b>컨셉설명</b>
+						<span>기존 웹사이트는 단순히 제품 설명과 이미지만 구성되어있어 브랜드 이미지와 다르게 딱딱한 느낌을 주었습니다. 때문에, 제품을 어필하는 레이아웃으로 리뉴얼하여 사용자가 제품을 친근하게 느끼고 구매로 이어질 수 있도록 만들었습니다.</span>
+					</li>
+				</ul>
+				<a href="plan/hankook/index.html" target="_blank">리뉴얼 기획서</a>
+				<a href="site/everybot/index.html" target="_blank">웹사이트 바로가기</a>		
+				<a href="site/fashion/index.html" onclick="window.open(this.href, 'win1', 'top=10, left=100 , width=375, height=740, toolbar=yes, scrollbars=no, resizable=yes'); return false;"   onkeypress="this.onclick()">모바일웹 프로토타입</a>
+			</div>
+		</section>
+	</div>
+	<section id="event" class="area">
+		<h2 class="subTitle">Work history</h2>
+		<div>
+			<div>
+				<img src="images/event-1.png" alt="메디코퍼 카드뉴스">
+				<p>
+					<i class="fas fa-search"></i>
+					<b>자세히보기</b>
+				</p>
+			</div>
+			<div>
+				<img src="images/event-2.png" alt="메디코퍼 카드뉴스2">
+				<p>
+					<i class="fas fa-search"></i>
+					<b>자세히보기</b>
+				</p>
+			</div>
+			<div>
+				<img src="images/event-3.png" alt="메디코퍼 카드뉴스3">
+				<p>
+					<i class="fas fa-search"></i>
+					<b>자세히보기</b>
+				</p>
+			</div>
+			<div>
+				<img src="images/event-4.png" alt="메디코퍼 카드뉴스4">
+				<p>
+					<i class="fas fa-search"></i>
+					<b>자세히보기</b>
+				</p>
+			</div>
+			<div>
+				<img src="images/event-5.png" alt="메디코퍼 카드뉴스5">
+				<p>
+					<i class="fas fa-search"></i>
+					<b>자세히보기</b>
+				</p>
+			</div>
+			<div>
+				<img src="images/event-6.png" alt="메디코퍼 카드뉴스6">
+				<p>
+					<i class="fas fa-search"></i>
+					<b>자세히보기</b>
+				</p>
+			</div>
+			<div>
+				<img src="images/event-7.png" alt="메디코퍼 카드뉴스7">
+				<p>
+					<i class="fas fa-search"></i>
+					<b>자세히보기</b>
+				</p>
+			</div>
+			<div>
+				<img src="images/event-8.png" alt="메디코퍼 카드뉴스8">
+				<p>
+					<i class="fas fa-search"></i>
+					<b>자세히보기</b>
+				</p>
+			</div>
+			<div>
+				<img src="images/event-9.png" alt="메디코퍼 카드뉴스9">
+				<p>
+					<i class="fas fa-search"></i>
+					<b>자세히보기</b>
+				</p>
+			</div>			
+			<div>
+				<img src="images/event-10.png" alt="메디코퍼 카드뉴스10">
+				<p>
+					<i class="fas fa-search"></i>
+					<b>자세히보기</b>
+				</p>
+			</div>
+			<div>
+				<img src="images/event-11.png" alt="메디코퍼 카드뉴스11">
+				<p>
+					<i class="fas fa-search"></i>
+					<b>자세히보기</b>
+				</p>
+			</div>			
+			<div>
+				<img src="images/event-12.png" alt="메디코퍼 카드뉴스12">
+				<p>
+					<i class="fas fa-search"></i>
+					<b>자세히보기</b>
+				</p>
+			</div>
+		</div>
+	</section>
+	<section id="contact" class="area">
+		<h2 class="subTitle">
+			Contact us
+			<b>소중한 연락을 기다립니다!</b>
+		</h2>		
+		<div>
+			<section>
+				<i class="fas fa-envelope"></i>
+				<h3>E-mail</h3>
+				<p>ricatan@naver.com</p>
+			</section>
+			<section>
+				<a class="fas fa-phone-alt" href="tel:010-2261-3715"></a>
+				<h3>Phone</h3>
+				<a href="tel:010-2261-3715">tel:010-2261-3715</a>
+			</section>
+		</div>
+	</section>
+	<!-- 큰이미지 팝업모달 -->
+	<section id="popup">
+		<h3>클릭한 작품의 제목</h3>
+		<img src="#" alt="#">
+	</section>
+</body>
+</html>
+
+
+
+
