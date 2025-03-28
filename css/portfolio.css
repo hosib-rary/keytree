@@ -1,0 +1,357 @@
+@charset "utf-8";
+
+/*공통*/
+* {
+	margin:0; padding:0; box-sizing:border-box;	
+}
+::-webkit-scrollbar {width:0px;}
+html {scroll-behavior:smooth;}
+html, body {
+	font:12pt/160% 'Noto Sans KR' , sans-serif;
+	letter-spacing:-0.75pt;
+}
+
+.subTitle{
+	display: block;
+	font-family: "Playball", cursive;
+	font-weight: 400;
+	font-style: normal;
+	background-image: url(../images/subtitle_bg.png);
+	width: 275px;
+	margin: auto;
+	height: 58px;
+	padding: 10px 20px;
+}
+img {
+	display:block; max-width:100%;
+}
+a {text-decoration:none;}
+
+
+/*상단 내비게이션*/
+nav {
+	position:fixed; width:100%; z-index:1;
+	/* padding:20pt 10pt 10pt 10pt; */ padding:0px;
+	font-weight:700; 
+}
+nav.act {background:#bee5d8; border-bottom: 1px solid rgba(95, 149, 116, 0.357);
+	box-shadow: 0 7px 10px 3px rgba(175,212,181,0.66);
+}
+
+nav.act #menu a{ color:rgb(4, 99, 88); }
+
+nav.act #menu a:hover, #menu a.act{ color:rgb(27, 114, 44); 
+	text-shadow:0 0 10px rgb(20, 113, 48); transform:scale(1.1) translateY(-1px);}
+
+nav> div {
+	max-width:1490px; margin:auto; display:flex;
+}
+nav p {
+	color:white; font-size:1.2rem;
+	flex:1;
+}
+#menu {align-self: center;}
+#menu a {
+	color:rgb(87, 87, 87); margin-left:20pt;
+	display:inline-block;
+}
+/* #menu a:hover, #menu a.act {
+	color:rgb(65, 180, 100); text-shadow:0 0 10px rgb(65, 180, 100); transform:scale(1.1) translateY(-1px);
+} */
+
+/*헤더(배경이미지)*/
+#top {
+	height:100vh;
+	background:url("../images/backck001.png") no-repeat fixed center top/ cover;
+}
+#typing {
+	height:50vh; color:rgb(26, 92, 63); text-align:center; line-height:100%;
+	font-family: "Playball", cursive;
+	font-size:9rem; padding:40vh 1px 0 1px;
+	text-shadow: 4px 0px 14px rgba(94, 227, 134, 0.8);
+}
+#click {	
+	max-width:100px; margin:auto; margin-top:30vh;
+	text-align:center;
+}
+#click i {
+	font-size:2.5rem; color:rgb(20, 102, 72); display:block;
+	animation:upDown 1s infinite;
+}
+@keyframes upDown {
+	from 	{transform:translateY(-10pt); opacity:0;}
+	to 		{transform:translateY(0pt);   opacity:1;}
+}
+
+#click a {color:rgb(20, 102, 72);}
+
+.scImage{
+	width: 70%;
+	height: 70%;
+	margin: auto;
+	animation-name: mouse;
+	animation-duration: 2s;
+	animation-iteration-count:infinite;
+}
+
+@keyframes mouse {
+	from {opacity: 0;}
+	to{opacity: 100%;}
+}
+
+
+/*** 공통: About / Portfolio / Event / Contant */
+.area {
+	padding:15vh 0 10vh 0; min-height:100vh;
+}
+.area h2 {
+	text-align:center; font-size:3rem; margin-bottom:60pt;
+}
+
+/*About(자기소개)*/
+#about {
+	background:#d1eed8;
+}
+#about img {
+	width:220pt; margin:auto;
+}
+#about> p {
+	max-width:200pt; margin:auto; text-align:center;
+	padding-top:10px;
+}
+#about mark {
+	font-size:0.8rem;
+}
+#about span {
+	transform:translateX(-15px); display:inline-block;
+}
+
+/*profile / Experiences & Education / skill*/
+#about> div {	
+	max-width:850pt; margin:auto; display:flex;
+}
+#about h3 		{padding:50pt 0  10pt 0;}
+#about p 		{font-size:0.9rem; font-weight:300;}
+
+/*profile*/
+#about section:nth-child(1){
+	flex:1.3; padding-right:20px;
+}
+/*Experiences & Education*/
+#about section:nth-child(2){
+	flex:2; padding-right:20px;
+}
+/*skill*/
+#skill  {flex:1.2;}
+#skill label {
+	font-size:0.8rem; font-weight:400;
+	display:inline-block; width:45%;
+}
+#skill progress {
+	width:53%; 
+}
+#skill ::-webkit-progress-bar {
+	background:#eee; height:10px; border-radius:5px;
+}
+#skill ::-webkit-progress-value {
+	background:rgb(25, 165, 67); border-radius:5px;
+}
+
+
+/***** portfolio *****/
+/*아래는 적용하려다 만거 */
+/* #portfolio::before{
+	display: block;
+	content: '';
+	background-image:url("../images/backckck0001.png") no-repeat fixed center top/ cover;
+} */
+#portfolio {
+	padding-left:20pt; padding-right:20pt;
+	max-width:1400px; margin:auto; overflow:hidden;
+/* 	background:url("../images/backckck0001.png") no-repeat fixed center top/ cover; */
+}
+#portfolio section {
+	display:flex;
+}
+#portfolio section:not(:first-of-type){
+	min-height:90vh; padding-top:17vh;
+}
+#portfolio div.left {
+	margin-right:60pt;
+}
+#portfolio h3 {
+	font-size:1.8rem; padding-bottom:20pt;
+}
+#portfolio ul {
+	list-style:none; line-height:180%;
+	padding-bottom:25pt;
+}
+#portfolio li {display:flex; padding-bottom:10px;}
+#portfolio b 	{flex:0.15;}
+#portfolio span {flex:0.85; text-align:justify;}
+#portfolio a 	{
+	border:1px solid #ddd; padding:6pt 30pt; 
+	border-radius:20pt; color:black; font-weight:500;
+	font-size:1rem; display:inline-block; margin-bottom:5pt;
+}
+#portfolio a:hover {
+	background:#5ead90; color:white;
+}
+
+
+/*첫번째 포폴 (아래에서 위로 서서히 올라온다) */
+#port1 {
+	padding:10vh 0 17vh 0; transform:translateY(100pt);
+	opacity:0; transition:2s;
+}
+#port1.act {
+	transform:translateY(0pt); opacity:1;
+}
+#port1 img {
+	transform:translateY(-40pt);
+}
+
+/*두번째 포폴*/
+#port2 div.left {
+	transform:translateX(-50vw);  transition:2s;
+}
+#port2 div.right{
+	transform:translate(50vw, 20pt); transition:2s;
+}
+#port2.act div.left  {transform:translateX(0);}
+#port2.act div.right {transform:translate(0, 20pt);}
+
+
+/*세번째 포폴*/
+#port3 img {
+	transform:translateY(-40pt);
+}
+#port3 div.left  {transform:scale(0); transition:2s;}
+#port3 div.right {transform:scale(0); transition:2s;}
+#port3.act div.left  {transform:scale(1);}
+#port3.act div.right {transform:scale(1);}
+
+/*네번째 포폴*/
+/* #port4 			{ 조만간 여기 채워넣을 것
+
+} */
+#port4 div.left {transform:translateX(-50vw);     transition:2s;}
+#port4 div.right{transform:translate(50vw, 20pt); transition:2s;}
+
+#port4.act div.left  {transform:translateX(0);}
+#port4.act div.right {transform:translate(0, 20pt);}
+
+
+/***** Event ****/
+#event {	
+	max-width:1500px; margin:auto;
+}
+#event> div{
+	display:flex; flex-wrap:wrap; justify-content:space-evenly;
+}
+
+/*정사각형 항목들 영역*/
+#event> div> div {
+	width:280px; position:relative; margin-bottom:10px;
+	overflow:hidden;
+}
+
+/*마우스를 대면 투명한 검정바탕이 나타난다*/
+#event> div> div:hover p   {opacity:1;}
+#event> div  img  {transition:0.5s;}
+#event> div> div:hover img {transform:scale(1.1);}
+
+/*투명한 검정바탕*/
+#event> div p {
+	position:absolute; background:rgba(0,0,0, 0.75); 
+	width:100%; height:100%;top:0; color:white;
+	text-align:center; opacity:0; transition:0.5s;
+}
+/*자세히보기*/
+#event> div b {
+	font-weight:300; padding-top:10pt; display:block;
+}
+
+
+/*돋보기모양*/
+#event> div i {
+	font-size:2rem; margin-top:38%; display:block;
+}
+
+
+/***** Contact *****/
+#contact {background-image: url(../images/backck002.png); background-size: cover;}
+#contact b {
+	display:block; 
+	font-size:1.1rem; font-weight:400;
+	padding-top:20pt;
+}
+#contact div {	
+	max-width:600px; margin:auto; display:flex;
+	padding-top:10vh;
+}
+#contact section {
+	flex:1; text-align:center;
+}
+#contact i, #contact a.fas {
+	font-size:5rem; color:#428f5a; padding-bottom:10pt;
+}
+#contact a:last-child {color:black;}
+
+
+/*****큰이미지 팝업모달 *****/
+#popup {
+	position:fixed; background:rgba(0,0,0, 0.9); z-index:1;
+	top:0; width:100vw; height:100vh; overflow:auto;  display:none;
+}
+#popup h3 {
+	color:white; text-align:center; padding:15pt;
+}
+#popup img {
+	margin:auto; max-width:700px; 
+}
+
+/************************************************/
+/*600픽셀이하 넓이에 해당되는 브라우저에서 이 디자인들이 적용됨.*/
+@media(max-width:800px){
+	nav {padding:10pt 5pt 5pt 5pt;}
+	nav>div {flex-direction:column;}
+	nav p  	{margin-bottom:5pt;}
+	
+	#menu a:first-child {margin-left:0;}
+	#menu a {font-size:0.9rem; }
+	#typing {font-size:2rem;}
+	
+	#about> div {flex-direction:column; padding:0 10pt;}
+	#about img 	{width:200px;}
+	#skill label{width:38%;}
+	#skill progress {width:58%;}
+	
+	#portfolio {padding-left:10px; padding-right:10px;}
+	#portfolio section {flex-direction:column;}
+	#portfolio div.left {margin-right:0;}
+	#portfolio section:nth-of-type(odd) div.left{order:2;}
+	#portfolio section:nth-of-type(odd) div.right{order:1;}
+	#portfolio section:not(:first-child){padding-top:0vh;}
+	#portfolio ul {padding-bottom:10pt;}
+	#portfolio li {flex-direction:column;}	
+	#portfolio a {padding:4pt 6pt 5px 6px;}
+		
+	#port1 {padding-top:0; transform:translateY(0pt); opacity:1;}
+	
+	#port2 {padding-bottom:100pt;}
+	#port2 div.left {transform:translateX(0);}
+	#port2 div.right{transform:translate(0,30pt);}
+	
+	#port3 {padding-top:30vh;}
+	#port3 img {transform:translateY(0pt);}
+	#port3 div.left {padding-top:30pt; transform:scale(1);}
+	#port3 div.right {transform:scale(1);}
+	
+	#event> div> div {width:90%;}
+	#event img 	{width:100%;}
+	
+	#contact div {padding-top:6vh;}	
+	
+	#popup img {width:100%;}
+}
