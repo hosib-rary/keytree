@@ -44,7 +44,7 @@ nav.act #menu a:hover, #menu a.act{ color:rgb(27, 114, 44);
 	text-shadow:0 0 10px rgb(20, 113, 48); transform:scale(1.1) translateY(-1px);}
 
 nav> div {
-	max-width:1490px; margin:auto; display:flex;
+	max-width:1490px; margin:auto; display:flex; padding: 0 20px;
 }
 nav p {
 	color:white; font-size:1.2rem;
@@ -198,6 +198,13 @@ nav p {
 	background:#5ead90; color:white;
 }
 
+/*포폴들에 들어가는 제목 앞에 줄 아이콘 영역*/
+/* .siteName{
+	border: 1px solid red;
+} */
+
+
+
 
 /*첫번째 포폴 (아래에서 위로 서서히 올라온다) */
 #port1 {
@@ -313,13 +320,14 @@ nav p {
 
 /************************************************/
 /*600픽셀이하 넓이에 해당되는 브라우저에서 이 디자인들이 적용됨.*/
-@media(max-width:800px){
-	nav {padding:10pt 5pt 5pt 5pt;}
+@media(max-width:600px){
+	/* nav {padding:10pt 5pt 5pt 5pt; } */
 	nav>div {flex-direction:column;}
-	nav p  	{margin-bottom:5pt;}
+	nav p  	{margin-bottom:5pt; margin: auto;}
 	
+	#menu {display:flex; width:100%; justify-content: space-between;}
 	#menu a:first-child {margin-left:0;}
-	#menu a {font-size:0.9rem; }
+	#menu a {font-size:0.9rem; margin:0;}
 	#typing {font-size:2rem;}
 	
 	#about> div {flex-direction:column; padding:0 10pt;}
@@ -355,3 +363,4 @@ nav p {
 	
 	#popup img {width:100%;}
 }
+
