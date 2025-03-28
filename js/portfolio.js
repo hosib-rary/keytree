@@ -66,10 +66,13 @@ $(document).ready(function(){
 			//About에서 오른쪽 "skill" bar 애니메이션
 			$("#Photoshop progress").animate({value : 90});
 			$("#Illustrator progress").delay(100).animate({value : 80});
+			$("#Premiere progress").delay(100).animate({value : 80});
+			$("#AfterEffect progress").delay(100).animate({value : 70});
 			$("#Html progress").delay(200).animate({value : 70});
 			$("#CSS progress").delay(300).animate({value : 75});
 			$("#JQuery progress").delay(300).animate({value : 40});
 			$("#Blender progress").delay(300).animate({value : 65});
+			$("#Japanese progress").delay(300).animate({value : 60});
 			pos = 1;
 		}
 		if( st>= port1Top ){
