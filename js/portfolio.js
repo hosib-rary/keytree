@@ -49,7 +49,6 @@ $(document).ready(function(){
 	const port1Top = $("#port1").offset().top - 500;
 	const port2Top = $("#port2").offset().top - 400;
 	const port3Top = $("#port3").offset().top - 400;
-	const port4Top = $("#port4").offset().top - 400;
 	const eventTop = $("#event").offset().top - 400;
 	const contactTop=$("#contact").offset().top - 200;
 	
@@ -84,9 +83,6 @@ $(document).ready(function(){
 		}
 		if( st>= port3Top ){
 			$("#port3").addClass("act");					
-		}
-		if( st>= port4Top ){
-			$("#port4").addClass("act");					
 		}
 		if( st>= eventTop && st<contactTop ){
 			pos = 3;
