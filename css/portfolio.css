@@ -55,9 +55,6 @@ nav p {
 	color:rgb(87, 87, 87); margin-left:20pt;
 	display:inline-block;
 }
-/* #menu a:hover, #menu a.act {
-	color:rgb(65, 180, 100); text-shadow:0 0 10px rgb(65, 180, 100); transform:scale(1.1) translateY(-1px);
-} */
 
 /*헤더(배경이미지)*/
 #top {
@@ -237,16 +234,6 @@ nav p {
 #port3 div.right {transform:scale(0); transition:2s;}
 #port3.act div.left  {transform:scale(1);}
 #port3.act div.right {transform:scale(1);}
-
-/*네번째 포폴*/
-/* #port4 			{ 조만간 여기 채워넣을 것
-
-} */
-#port4 div.left {transform:translateX(-50vw);     transition:2s;}
-#port4 div.right{transform:translate(50vw, 20pt); transition:2s;}
-
-#port4.act div.left  {transform:translateX(0);}
-#port4.act div.right {transform:translate(0, 20pt);}
 
 
 /***** Event ****/
